@@ -1,0 +1,337 @@
+$primaryCol:#F86D70;
+.home{
+    .navbar{
+        width:100vw;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        //background-color: lightgray;
+        h1{
+            flex: 1.5;
+            margin-left: 2rem;
+            font-weight: bolder;
+            font-size: 2.6rem;
+            color: $primaryCol;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex: 1;
+            a{
+                font-size: 1.2rem;
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    border-bottom: 5px solid $primaryCol;
+                }
+            }
+        }
+        i{  
+            display: none;
+            position: fixed;
+            top: 5vh;
+            right: 5vw;
+            color: white;
+            background-color: $primaryCol;
+            padding: .3rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+    }
+    .main-home{
+        width: 100vw;
+        min-height: 88vh;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .navbar{
+        width:100vw;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        //background-color: lightgray;
+        h1{
+            flex: 1.5;
+            margin-left: 2rem;
+            font-weight: bolder;
+            font-size: 2.6rem;
+            color: $primaryCol;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex: 1;
+            a{
+                font-size: 1.2rem;
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    border-bottom: 5px solid $primaryCol;
+                }
+            }
+        }
+        i{  
+            //display: none;
+            position: fixed;
+            top: 5vh;
+            right: 5vw;
+            color: white;
+            background-color: $primaryCol;
+            padding: .3rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+    }
+    
+        .home-title{
+            margin-right: 10vw;
+            h2{
+                animation: right 1s ease-in forwards;
+                font-size: 2.5rem;
+                color: $primaryCol;
+                letter-spacing: 2px;
+    
+                transform: translateX(-100vw);
+            }
+            h3{
+                animation: right 1s 1s ease-in forwards;
+                font-size: 2rem;
+                margin-left: 5vw;
+                letter-spacing: 2px;
+    
+                transform: translateX(100vw);
+            }
+        }
+        img{
+            width: 40vw;
+            animation: up-down 3s linear alternate-reverse infinite;
+        }
+        i{
+            position: fixed;
+            bottom: 5vh;
+            right: 5vw;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: $primaryCol;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+
+
+}
+
+
+.courses, .sessionals, .questions, .links{
+    width: 100vw;
+    min-height: 100vh;
+    //background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin-top:5vh;
+        margin-bottom: 5vh;
+        color: $primaryCol;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+.links table{
+    width:80vw;
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 5rem;
+    th{
+        color: $primaryCol;
+        font-size: 1.3rem;
+        border-bottom: 1px solid gray;
+    }
+    td{
+        width: 20vw;
+        margin-top:.5vh;
+        border: 1px solid rgba(128, 128, 128, 0.288);
+        padding: 1rem 0;
+        
+     }
+    
+    }
+   .courses{
+       background-color: #fa888a49;
+   }
+
+
+
+//axaira parts
+//========================
+.notice{
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    a{
+  
+      
+        text-decoration: none;
+        color: white;
+        background-color: orangered;
+        border-radius: 2rem;
+        margin-left: 20vw;
+        padding: 1rem;
+        &:hover{
+            background-color:rgb(250, 156, 121);
+        }
+    }
+}
+
+
+
+
+
+.footer{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color:#454B69 ;
+    color: white;
+    h5{
+        font-size: 1.5rem;
+    }
+    p{
+        color: #cccccc;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.move-in{
+    transform: translateX(0vw) !important;
+}
+
+//============================================================
+//
+//  Animations
+//
+//============================================================
+@keyframes right {
+    to{
+        transform: translateX(0vw);
+    }
+}
+@keyframes up-down{
+    from{
+        transform: translateY(3vh);
+
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@media all and (max-width:800px){
+    .navbar{
+        h1{
+            margin-top:2vh;
+            font-size: 2rem !important;
+        }
+        ul{
+            background-color: $primaryCol;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+
+            z-index: 1 !important;
+
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+
+            transform: translateX(100vw);
+            transition: transform .5s ease;
+            text-align: center;
+            a{
+                color: white;
+                padding: 5rem;
+                //background-color: red;
+
+                
+                li{
+                    color: white;
+                    border-bottom: 2px solid white;
+                    
+                }
+            }
+        }
+        i{
+            display: block !important;
+            color: $primaryCol;
+            background-color: white;
+            z-index: 2;
+
+        }
+    }
+    .home-title{
+        h2{
+            font-size:1.5rem !important;
+            letter-spacing: 1px !important;
+            
+        }
+        h3{
+            font-size:1.5rem !important;
+            letter-spacing: 1px !important;
+            
+        }
+        
+    }
+    .home .main-home{
+        flex-direction: column;
+        img{
+            width: 70vw;
+        }
+    }
+}

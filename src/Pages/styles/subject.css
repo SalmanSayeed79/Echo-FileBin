@@ -1,0 +1,173 @@
+.subjectPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subjectPage .half-wall {
+  width: 100vw;
+  min-height: 40vh;
+  background-color: #F86D70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+}
+
+.subjectPage .half-wall h5 {
+  padding: .5rem 1rem;
+  color: #F86D70;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  cursor: pointer;
+}
+
+.subjectPage .half-wall h5:hover {
+  background-color: #d6d6d6;
+}
+
+.subjectPage .half-wall h5:active {
+  background-color: #d6d6d6;
+}
+
+.subjectPage .half-wall h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.subjectPage .half-wall .text-bar {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subjectPage .card-container {
+  width: 90vw;
+  min-height: 80vh;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.subjectPage .file-container {
+  margin-top: 5vh;
+}
+
+.subjectPage .file-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: gray;
+}
+
+.subjectPage .add-file {
+  margin-bottom: 5vh;
+}
+
+.subjectPage .add-file h2 {
+  text-align: center;
+  color: #F86D70;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.subjectPage .add-file #add-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subjectPage .add-file #add-form input {
+  border: 0;
+  border-bottom: 2px solid #F86D70;
+  width: 80vw;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subjectPage .add-file #add-form input:focus {
+  outline: none;
+}
+
+.subjectPage .add-file #add-form button {
+  height: 3rem;
+  border: 0;
+  background-color: #F86D70;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.subjectPage .add-file #add-form button:hover, .subjectPage .add-file #add-form button:active {
+  background-color: #fc9c9d;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+  .half-wall h1 {
+    margin-top: 2vh;
+  }
+  .half-wall h5 {
+    top: 2vh !important;
+  }
+  .half-wall .text-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .half-wall .text-bar div {
+    margin-top: 2vh;
+  }
+}
+/*# sourceMappingURL=subject.css.map */

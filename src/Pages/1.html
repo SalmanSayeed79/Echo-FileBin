@@ -1,0 +1,3349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ME Cheatsheet</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      .tableFixHead {
+        overflow-y: scroll;
+        overflow-x: scroll;
+        height: 100rem;
+        width: 100%;
+        margin: 5px;
+      }
+
+      .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 2px 4px;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background: #eee;
+      }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
+    <h2 class="text-center">ME Assignment 1 Cheatsheet</h2>
+    <div class="tableFixHead">
+      <table>
+        <thead>
+          <tr class="header">
+            <th style="text-align: left"></th>
+            <th style="text-align: center">1.1</th>
+            <th style="text-align: center">1.2</th>
+            <th style="text-align: center">1.3</th>
+            <th style="text-align: center">2.1</th>
+            <th style="text-align: center">2.2</th>
+            <th style="text-align: center">2.3</th>
+            <th style="text-align: center">3</th>
+            <th style="text-align: center">4</th>
+            <th style="text-align: center">5</th>
+            <th style="text-align: center">6</th>
+            <th style="text-align: center">7.1</th>
+            <th style="text-align: center">7.2</th>
+            <th style="text-align: center">7.3</th>
+            <th style="text-align: center">8.1</th>
+            <th style="text-align: center">8.2</th>
+            <th style="text-align: center">9</th>
+            <th style="text-align: center">10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td style="text-align: left">General Formula</td>
+            <td style="text-align: center">
+              <span class="math inline">\(\frac{40}{3}R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(20R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(\frac{40}{3}R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(37.5R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(\frac{25\sqrt{3}}{2}R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(25\sqrt{3}R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(12(2\sqrt{3} - \frac{0.65}{100}R)\)</span
+              >
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(20(\frac{4}{\sqrt{3}} - 1)R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(\frac{1240}{7g}R\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(10\frac{\sqrt{6}+\sqrt{2}}{\sqrt{9 + \sqrt{2} -
+                \sqrt{6}}}R\)</span
+              >
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(80R-(\sqrt{2}-1)900\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(900\sqrt{2}\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(900\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(5\frac{\sqrt{234+90\cos{50^{\circ}}}}{\sin{50^{\circ}}}R\)</span
+              >
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(5\frac{15+3\cos{50^{\circ}}}{\sin{50^{\circ}}}R\)</span
+              >
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(\sqrt{\sqrt[3]{16r^{4}l^{2}} - 4r^{2}}\)</span
+              >
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(\sin^{-1}({\frac{0.02}{9}R})\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">
+              <span class="math inline">\(\approx\)</span>
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(13.33R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(20R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(13.33R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(37.5R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(21.65R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(43.3R\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(41.57 - 0.0065R\)</span> inch
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(26.188R\)</span> lb
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(18.076R\)</span> kg
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(13.69R\)</span> N<span
+                class="math inline"
+                >\(\cdot\)</span
+              >m
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(80R - 372.79\)</span> N<span
+                class="math inline"
+                >\(\cdot\)</span
+              >m
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(1272.792\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(900\)</span> N
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(111.506R\)</span> lb
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(110.492R\)</span> lb
+            </td>
+            <td style="text-align: center">
+              <span class="math inline">\(18.35\)</span> inch
+            </td>
+            <td style="text-align: center">
+              <span class="math inline"
+                >\(\sin^{-1}({\frac{0.02}{9}R})^{\circ}\)</span
+              >
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905001</td>
+            <td style="text-align: center">13.333 N</td>
+            <td style="text-align: center">20 N</td>
+            <td style="text-align: center">13.333 N</td>
+            <td style="text-align: center">37.5 N</td>
+            <td style="text-align: center">21.651 N</td>
+            <td style="text-align: center">43.301 N</td>
+            <td style="text-align: center">41.491 inch</td>
+            <td style="text-align: center">26.188 lb</td>
+            <td style="text-align: center">18.076 kg</td>
+            <td style="text-align: center">
+              13.69 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              -292.79 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">111.51 lb</td>
+            <td style="text-align: center">110.49 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.12732<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905002</td>
+            <td style="text-align: center">26.667 N</td>
+            <td style="text-align: center">40 N</td>
+            <td style="text-align: center">26.667 N</td>
+            <td style="text-align: center">75 N</td>
+            <td style="text-align: center">43.301 N</td>
+            <td style="text-align: center">86.603 N</td>
+            <td style="text-align: center">41.413 inch</td>
+            <td style="text-align: center">52.376 lb</td>
+            <td style="text-align: center">36.152 kg</td>
+            <td style="text-align: center">
+              27.381 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              -212.79 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">223.01 lb</td>
+            <td style="text-align: center">220.98 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.25465<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905003</td>
+            <td style="text-align: center">40 N</td>
+            <td style="text-align: center">60 N</td>
+            <td style="text-align: center">40 N</td>
+            <td style="text-align: center">112.5 N</td>
+            <td style="text-align: center">64.952 N</td>
+            <td style="text-align: center">129.9 N</td>
+            <td style="text-align: center">41.335 inch</td>
+            <td style="text-align: center">78.564 lb</td>
+            <td style="text-align: center">54.227 kg</td>
+            <td style="text-align: center">
+              41.071 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              -132.79 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">334.52 lb</td>
+            <td style="text-align: center">331.48 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.38197<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905004</td>
+            <td style="text-align: center">53.333 N</td>
+            <td style="text-align: center">80 N</td>
+            <td style="text-align: center">53.333 N</td>
+            <td style="text-align: center">150 N</td>
+            <td style="text-align: center">86.603 N</td>
+            <td style="text-align: center">173.21 N</td>
+            <td style="text-align: center">41.257 inch</td>
+            <td style="text-align: center">104.75 lb</td>
+            <td style="text-align: center">72.303 kg</td>
+            <td style="text-align: center">
+              54.762 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              -52.792 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">446.02 lb</td>
+            <td style="text-align: center">441.97 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.5093<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905005</td>
+            <td style="text-align: center">66.667 N</td>
+            <td style="text-align: center">100 N</td>
+            <td style="text-align: center">66.667 N</td>
+            <td style="text-align: center">187.5 N</td>
+            <td style="text-align: center">108.25 N</td>
+            <td style="text-align: center">216.51 N</td>
+            <td style="text-align: center">41.179 inch</td>
+            <td style="text-align: center">130.94 lb</td>
+            <td style="text-align: center">90.379 kg</td>
+            <td style="text-align: center">
+              68.452 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              27.208 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">557.53 lb</td>
+            <td style="text-align: center">552.46 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.63663<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905006</td>
+            <td style="text-align: center">80 N</td>
+            <td style="text-align: center">120 N</td>
+            <td style="text-align: center">80 N</td>
+            <td style="text-align: center">225 N</td>
+            <td style="text-align: center">129.9 N</td>
+            <td style="text-align: center">259.81 N</td>
+            <td style="text-align: center">41.101 inch</td>
+            <td style="text-align: center">157.13 lb</td>
+            <td style="text-align: center">108.45 kg</td>
+            <td style="text-align: center">
+              82.143 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              107.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">669.03 lb</td>
+            <td style="text-align: center">662.95 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.76397<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905007</td>
+            <td style="text-align: center">93.333 N</td>
+            <td style="text-align: center">140 N</td>
+            <td style="text-align: center">93.333 N</td>
+            <td style="text-align: center">262.5 N</td>
+            <td style="text-align: center">151.55 N</td>
+            <td style="text-align: center">303.11 N</td>
+            <td style="text-align: center">41.023 inch</td>
+            <td style="text-align: center">183.32 lb</td>
+            <td style="text-align: center">126.53 kg</td>
+            <td style="text-align: center">
+              95.833 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              187.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">780.54 lb</td>
+            <td style="text-align: center">773.44 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              0.8913<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905008</td>
+            <td style="text-align: center">106.67 N</td>
+            <td style="text-align: center">160 N</td>
+            <td style="text-align: center">106.67 N</td>
+            <td style="text-align: center">300 N</td>
+            <td style="text-align: center">173.21 N</td>
+            <td style="text-align: center">346.41 N</td>
+            <td style="text-align: center">40.945 inch</td>
+            <td style="text-align: center">209.5 lb</td>
+            <td style="text-align: center">144.61 kg</td>
+            <td style="text-align: center">
+              109.52 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              267.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">892.04 lb</td>
+            <td style="text-align: center">883.94 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.0186<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905009</td>
+            <td style="text-align: center">120 N</td>
+            <td style="text-align: center">180 N</td>
+            <td style="text-align: center">120 N</td>
+            <td style="text-align: center">337.5 N</td>
+            <td style="text-align: center">194.86 N</td>
+            <td style="text-align: center">389.71 N</td>
+            <td style="text-align: center">40.867 inch</td>
+            <td style="text-align: center">235.69 lb</td>
+            <td style="text-align: center">162.68 kg</td>
+            <td style="text-align: center">
+              123.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              347.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1003.6 lb</td>
+            <td style="text-align: center">994.43 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.146<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905010</td>
+            <td style="text-align: center">133.33 N</td>
+            <td style="text-align: center">200 N</td>
+            <td style="text-align: center">133.33 N</td>
+            <td style="text-align: center">375 N</td>
+            <td style="text-align: center">216.51 N</td>
+            <td style="text-align: center">433.01 N</td>
+            <td style="text-align: center">40.789 inch</td>
+            <td style="text-align: center">261.88 lb</td>
+            <td style="text-align: center">180.76 kg</td>
+            <td style="text-align: center">
+              136.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              427.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1115.1 lb</td>
+            <td style="text-align: center">1104.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.2733<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905011</td>
+            <td style="text-align: center">146.67 N</td>
+            <td style="text-align: center">220 N</td>
+            <td style="text-align: center">146.67 N</td>
+            <td style="text-align: center">412.5 N</td>
+            <td style="text-align: center">238.16 N</td>
+            <td style="text-align: center">476.31 N</td>
+            <td style="text-align: center">40.711 inch</td>
+            <td style="text-align: center">288.07 lb</td>
+            <td style="text-align: center">198.83 kg</td>
+            <td style="text-align: center">
+              150.6 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              507.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1226.6 lb</td>
+            <td style="text-align: center">1215.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.4007<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905012</td>
+            <td style="text-align: center">160 N</td>
+            <td style="text-align: center">240 N</td>
+            <td style="text-align: center">160 N</td>
+            <td style="text-align: center">450 N</td>
+            <td style="text-align: center">259.81 N</td>
+            <td style="text-align: center">519.62 N</td>
+            <td style="text-align: center">40.633 inch</td>
+            <td style="text-align: center">314.26 lb</td>
+            <td style="text-align: center">216.91 kg</td>
+            <td style="text-align: center">
+              164.29 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              587.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1338.1 lb</td>
+            <td style="text-align: center">1325.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.5281<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905013</td>
+            <td style="text-align: center">173.33 N</td>
+            <td style="text-align: center">260 N</td>
+            <td style="text-align: center">173.33 N</td>
+            <td style="text-align: center">487.5 N</td>
+            <td style="text-align: center">281.46 N</td>
+            <td style="text-align: center">562.92 N</td>
+            <td style="text-align: center">40.555 inch</td>
+            <td style="text-align: center">340.44 lb</td>
+            <td style="text-align: center">234.99 kg</td>
+            <td style="text-align: center">
+              177.98 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              667.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1449.6 lb</td>
+            <td style="text-align: center">1436.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.6554<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905014</td>
+            <td style="text-align: center">186.67 N</td>
+            <td style="text-align: center">280 N</td>
+            <td style="text-align: center">186.67 N</td>
+            <td style="text-align: center">525 N</td>
+            <td style="text-align: center">303.11 N</td>
+            <td style="text-align: center">606.22 N</td>
+            <td style="text-align: center">40.477 inch</td>
+            <td style="text-align: center">366.63 lb</td>
+            <td style="text-align: center">253.06 kg</td>
+            <td style="text-align: center">
+              191.67 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              747.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1561.1 lb</td>
+            <td style="text-align: center">1546.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.7828<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905015</td>
+            <td style="text-align: center">200 N</td>
+            <td style="text-align: center">300 N</td>
+            <td style="text-align: center">200 N</td>
+            <td style="text-align: center">562.5 N</td>
+            <td style="text-align: center">324.76 N</td>
+            <td style="text-align: center">649.52 N</td>
+            <td style="text-align: center">40.399 inch</td>
+            <td style="text-align: center">392.82 lb</td>
+            <td style="text-align: center">271.14 kg</td>
+            <td style="text-align: center">
+              205.36 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              827.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1672.6 lb</td>
+            <td style="text-align: center">1657.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              1.9102<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905016</td>
+            <td style="text-align: center">213.33 N</td>
+            <td style="text-align: center">320 N</td>
+            <td style="text-align: center">213.33 N</td>
+            <td style="text-align: center">600 N</td>
+            <td style="text-align: center">346.41 N</td>
+            <td style="text-align: center">692.82 N</td>
+            <td style="text-align: center">40.321 inch</td>
+            <td style="text-align: center">419.01 lb</td>
+            <td style="text-align: center">289.21 kg</td>
+            <td style="text-align: center">
+              219.05 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              907.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1784.1 lb</td>
+            <td style="text-align: center">1767.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.0376<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905017</td>
+            <td style="text-align: center">226.67 N</td>
+            <td style="text-align: center">340 N</td>
+            <td style="text-align: center">226.67 N</td>
+            <td style="text-align: center">637.5 N</td>
+            <td style="text-align: center">368.06 N</td>
+            <td style="text-align: center">736.12 N</td>
+            <td style="text-align: center">40.243 inch</td>
+            <td style="text-align: center">445.2 lb</td>
+            <td style="text-align: center">307.29 kg</td>
+            <td style="text-align: center">
+              232.74 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              987.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">1895.6 lb</td>
+            <td style="text-align: center">1878.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.165<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905018</td>
+            <td style="text-align: center">240 N</td>
+            <td style="text-align: center">360 N</td>
+            <td style="text-align: center">240 N</td>
+            <td style="text-align: center">675 N</td>
+            <td style="text-align: center">389.71 N</td>
+            <td style="text-align: center">779.42 N</td>
+            <td style="text-align: center">40.165 inch</td>
+            <td style="text-align: center">471.38 lb</td>
+            <td style="text-align: center">325.36 kg</td>
+            <td style="text-align: center">
+              246.43 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1067.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2007.1 lb</td>
+            <td style="text-align: center">1988.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.2924<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905019</td>
+            <td style="text-align: center">253.33 N</td>
+            <td style="text-align: center">380 N</td>
+            <td style="text-align: center">253.33 N</td>
+            <td style="text-align: center">712.5 N</td>
+            <td style="text-align: center">411.36 N</td>
+            <td style="text-align: center">822.72 N</td>
+            <td style="text-align: center">40.087 inch</td>
+            <td style="text-align: center">497.57 lb</td>
+            <td style="text-align: center">343.44 kg</td>
+            <td style="text-align: center">
+              260.12 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1147.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2118.6 lb</td>
+            <td style="text-align: center">2099.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.4199<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905020</td>
+            <td style="text-align: center">266.67 N</td>
+            <td style="text-align: center">400 N</td>
+            <td style="text-align: center">266.67 N</td>
+            <td style="text-align: center">750 N</td>
+            <td style="text-align: center">433.01 N</td>
+            <td style="text-align: center">866.03 N</td>
+            <td style="text-align: center">40.009 inch</td>
+            <td style="text-align: center">523.76 lb</td>
+            <td style="text-align: center">361.52 kg</td>
+            <td style="text-align: center">
+              273.81 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1227.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2230.1 lb</td>
+            <td style="text-align: center">2209.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.5473<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905021</td>
+            <td style="text-align: center">280 N</td>
+            <td style="text-align: center">420 N</td>
+            <td style="text-align: center">280 N</td>
+            <td style="text-align: center">787.5 N</td>
+            <td style="text-align: center">454.66 N</td>
+            <td style="text-align: center">909.33 N</td>
+            <td style="text-align: center">39.931 inch</td>
+            <td style="text-align: center">549.95 lb</td>
+            <td style="text-align: center">379.59 kg</td>
+            <td style="text-align: center">
+              287.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1307.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2341.6 lb</td>
+            <td style="text-align: center">2320.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.6748<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905022</td>
+            <td style="text-align: center">293.33 N</td>
+            <td style="text-align: center">440 N</td>
+            <td style="text-align: center">293.33 N</td>
+            <td style="text-align: center">825 N</td>
+            <td style="text-align: center">476.31 N</td>
+            <td style="text-align: center">952.63 N</td>
+            <td style="text-align: center">39.853 inch</td>
+            <td style="text-align: center">576.14 lb</td>
+            <td style="text-align: center">397.67 kg</td>
+            <td style="text-align: center">
+              301.19 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1387.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2453.1 lb</td>
+            <td style="text-align: center">2430.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.8022<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905023</td>
+            <td style="text-align: center">306.67 N</td>
+            <td style="text-align: center">460 N</td>
+            <td style="text-align: center">306.67 N</td>
+            <td style="text-align: center">862.5 N</td>
+            <td style="text-align: center">497.96 N</td>
+            <td style="text-align: center">995.93 N</td>
+            <td style="text-align: center">39.775 inch</td>
+            <td style="text-align: center">602.32 lb</td>
+            <td style="text-align: center">415.74 kg</td>
+            <td style="text-align: center">
+              314.88 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1467.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2564.6 lb</td>
+            <td style="text-align: center">2541.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              2.9297<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905024</td>
+            <td style="text-align: center">320 N</td>
+            <td style="text-align: center">480 N</td>
+            <td style="text-align: center">320 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">519.62 N</td>
+            <td style="text-align: center">1039.2 N</td>
+            <td style="text-align: center">39.697 inch</td>
+            <td style="text-align: center">628.51 lb</td>
+            <td style="text-align: center">433.82 kg</td>
+            <td style="text-align: center">
+              328.57 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1547.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2676.1 lb</td>
+            <td style="text-align: center">2651.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.0572<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905025</td>
+            <td style="text-align: center">333.33 N</td>
+            <td style="text-align: center">500 N</td>
+            <td style="text-align: center">333.33 N</td>
+            <td style="text-align: center">937.5 N</td>
+            <td style="text-align: center">541.27 N</td>
+            <td style="text-align: center">1082.5 N</td>
+            <td style="text-align: center">39.619 inch</td>
+            <td style="text-align: center">654.7 lb</td>
+            <td style="text-align: center">451.9 kg</td>
+            <td style="text-align: center">
+              342.26 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1627.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2787.6 lb</td>
+            <td style="text-align: center">2762.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.1847<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905026</td>
+            <td style="text-align: center">346.67 N</td>
+            <td style="text-align: center">520 N</td>
+            <td style="text-align: center">346.67 N</td>
+            <td style="text-align: center">975 N</td>
+            <td style="text-align: center">562.92 N</td>
+            <td style="text-align: center">1125.8 N</td>
+            <td style="text-align: center">39.541 inch</td>
+            <td style="text-align: center">680.89 lb</td>
+            <td style="text-align: center">469.97 kg</td>
+            <td style="text-align: center">
+              355.95 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1707.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">2899.1 lb</td>
+            <td style="text-align: center">2872.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.3123<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905027</td>
+            <td style="text-align: center">360 N</td>
+            <td style="text-align: center">540 N</td>
+            <td style="text-align: center">360 N</td>
+            <td style="text-align: center">1012.5 N</td>
+            <td style="text-align: center">584.57 N</td>
+            <td style="text-align: center">1169.1 N</td>
+            <td style="text-align: center">39.463 inch</td>
+            <td style="text-align: center">707.08 lb</td>
+            <td style="text-align: center">488.05 kg</td>
+            <td style="text-align: center">
+              369.64 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1787.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3010.7 lb</td>
+            <td style="text-align: center">2983.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.4398<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905028</td>
+            <td style="text-align: center">373.33 N</td>
+            <td style="text-align: center">560 N</td>
+            <td style="text-align: center">373.33 N</td>
+            <td style="text-align: center">1050 N</td>
+            <td style="text-align: center">606.22 N</td>
+            <td style="text-align: center">1212.4 N</td>
+            <td style="text-align: center">39.385 inch</td>
+            <td style="text-align: center">733.26 lb</td>
+            <td style="text-align: center">506.12 kg</td>
+            <td style="text-align: center">
+              383.33 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1867.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3122.2 lb</td>
+            <td style="text-align: center">3093.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.5674<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905029</td>
+            <td style="text-align: center">386.67 N</td>
+            <td style="text-align: center">580 N</td>
+            <td style="text-align: center">386.67 N</td>
+            <td style="text-align: center">1087.5 N</td>
+            <td style="text-align: center">627.87 N</td>
+            <td style="text-align: center">1255.7 N</td>
+            <td style="text-align: center">39.307 inch</td>
+            <td style="text-align: center">759.45 lb</td>
+            <td style="text-align: center">524.2 kg</td>
+            <td style="text-align: center">
+              397.02 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              1947.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3233.7 lb</td>
+            <td style="text-align: center">3204.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.695<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905030</td>
+            <td style="text-align: center">400 N</td>
+            <td style="text-align: center">600 N</td>
+            <td style="text-align: center">400 N</td>
+            <td style="text-align: center">1125 N</td>
+            <td style="text-align: center">649.52 N</td>
+            <td style="text-align: center">1299 N</td>
+            <td style="text-align: center">39.229 inch</td>
+            <td style="text-align: center">785.64 lb</td>
+            <td style="text-align: center">542.27 kg</td>
+            <td style="text-align: center">
+              410.71 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2027.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3345.2 lb</td>
+            <td style="text-align: center">3314.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.8226<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905031</td>
+            <td style="text-align: center">413.33 N</td>
+            <td style="text-align: center">620 N</td>
+            <td style="text-align: center">413.33 N</td>
+            <td style="text-align: center">1162.5 N</td>
+            <td style="text-align: center">671.17 N</td>
+            <td style="text-align: center">1342.3 N</td>
+            <td style="text-align: center">39.151 inch</td>
+            <td style="text-align: center">811.83 lb</td>
+            <td style="text-align: center">560.35 kg</td>
+            <td style="text-align: center">
+              424.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2107.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3456.7 lb</td>
+            <td style="text-align: center">3425.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              3.9502<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905032</td>
+            <td style="text-align: center">426.67 N</td>
+            <td style="text-align: center">640 N</td>
+            <td style="text-align: center">426.67 N</td>
+            <td style="text-align: center">1200 N</td>
+            <td style="text-align: center">692.82 N</td>
+            <td style="text-align: center">1385.6 N</td>
+            <td style="text-align: center">39.073 inch</td>
+            <td style="text-align: center">838.02 lb</td>
+            <td style="text-align: center">578.43 kg</td>
+            <td style="text-align: center">
+              438.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2187.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3568.2 lb</td>
+            <td style="text-align: center">3535.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.0778<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905033</td>
+            <td style="text-align: center">440 N</td>
+            <td style="text-align: center">660 N</td>
+            <td style="text-align: center">440 N</td>
+            <td style="text-align: center">1237.5 N</td>
+            <td style="text-align: center">714.47 N</td>
+            <td style="text-align: center">1428.9 N</td>
+            <td style="text-align: center">38.995 inch</td>
+            <td style="text-align: center">864.2 lb</td>
+            <td style="text-align: center">596.5 kg</td>
+            <td style="text-align: center">
+              451.79 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2267.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3679.7 lb</td>
+            <td style="text-align: center">3646.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.2055<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905034</td>
+            <td style="text-align: center">453.33 N</td>
+            <td style="text-align: center">680 N</td>
+            <td style="text-align: center">453.33 N</td>
+            <td style="text-align: center">1275 N</td>
+            <td style="text-align: center">736.12 N</td>
+            <td style="text-align: center">1472.2 N</td>
+            <td style="text-align: center">38.917 inch</td>
+            <td style="text-align: center">890.39 lb</td>
+            <td style="text-align: center">614.58 kg</td>
+            <td style="text-align: center">
+              465.48 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2347.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3791.2 lb</td>
+            <td style="text-align: center">3756.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.3331<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905035</td>
+            <td style="text-align: center">466.67 N</td>
+            <td style="text-align: center">700 N</td>
+            <td style="text-align: center">466.67 N</td>
+            <td style="text-align: center">1312.5 N</td>
+            <td style="text-align: center">757.77 N</td>
+            <td style="text-align: center">1515.5 N</td>
+            <td style="text-align: center">38.839 inch</td>
+            <td style="text-align: center">916.58 lb</td>
+            <td style="text-align: center">632.65 kg</td>
+            <td style="text-align: center">
+              479.17 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2427.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">3902.7 lb</td>
+            <td style="text-align: center">3867.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.4608<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905036</td>
+            <td style="text-align: center">480 N</td>
+            <td style="text-align: center">720 N</td>
+            <td style="text-align: center">480 N</td>
+            <td style="text-align: center">1350 N</td>
+            <td style="text-align: center">779.42 N</td>
+            <td style="text-align: center">1558.8 N</td>
+            <td style="text-align: center">38.761 inch</td>
+            <td style="text-align: center">942.77 lb</td>
+            <td style="text-align: center">650.73 kg</td>
+            <td style="text-align: center">
+              492.86 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2507.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4014.2 lb</td>
+            <td style="text-align: center">3977.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.5886<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905037</td>
+            <td style="text-align: center">493.33 N</td>
+            <td style="text-align: center">740 N</td>
+            <td style="text-align: center">493.33 N</td>
+            <td style="text-align: center">1387.5 N</td>
+            <td style="text-align: center">801.07 N</td>
+            <td style="text-align: center">1602.1 N</td>
+            <td style="text-align: center">38.683 inch</td>
+            <td style="text-align: center">968.96 lb</td>
+            <td style="text-align: center">668.8 kg</td>
+            <td style="text-align: center">
+              506.55 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2587.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4125.7 lb</td>
+            <td style="text-align: center">4088.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.7163<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905038</td>
+            <td style="text-align: center">506.67 N</td>
+            <td style="text-align: center">760 N</td>
+            <td style="text-align: center">506.67 N</td>
+            <td style="text-align: center">1425 N</td>
+            <td style="text-align: center">822.72 N</td>
+            <td style="text-align: center">1645.4 N</td>
+            <td style="text-align: center">38.605 inch</td>
+            <td style="text-align: center">995.14 lb</td>
+            <td style="text-align: center">686.88 kg</td>
+            <td style="text-align: center">
+              520.24 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2667.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4237.2 lb</td>
+            <td style="text-align: center">4198.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.8441<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905039</td>
+            <td style="text-align: center">520 N</td>
+            <td style="text-align: center">780 N</td>
+            <td style="text-align: center">520 N</td>
+            <td style="text-align: center">1462.5 N</td>
+            <td style="text-align: center">844.37 N</td>
+            <td style="text-align: center">1688.7 N</td>
+            <td style="text-align: center">38.527 inch</td>
+            <td style="text-align: center">1021.3 lb</td>
+            <td style="text-align: center">704.96 kg</td>
+            <td style="text-align: center">
+              533.93 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2747.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4348.7 lb</td>
+            <td style="text-align: center">4309.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              4.9719<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905040</td>
+            <td style="text-align: center">533.33 N</td>
+            <td style="text-align: center">800 N</td>
+            <td style="text-align: center">533.33 N</td>
+            <td style="text-align: center">1500 N</td>
+            <td style="text-align: center">866.03 N</td>
+            <td style="text-align: center">1732.1 N</td>
+            <td style="text-align: center">38.449 inch</td>
+            <td style="text-align: center">1047.5 lb</td>
+            <td style="text-align: center">723.03 kg</td>
+            <td style="text-align: center">
+              547.62 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2827.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4460.2 lb</td>
+            <td style="text-align: center">4419.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.0997<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905041</td>
+            <td style="text-align: center">546.67 N</td>
+            <td style="text-align: center">820 N</td>
+            <td style="text-align: center">546.67 N</td>
+            <td style="text-align: center">1537.5 N</td>
+            <td style="text-align: center">887.68 N</td>
+            <td style="text-align: center">1775.4 N</td>
+            <td style="text-align: center">38.371 inch</td>
+            <td style="text-align: center">1073.7 lb</td>
+            <td style="text-align: center">741.11 kg</td>
+            <td style="text-align: center">
+              561.31 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2907.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4571.7 lb</td>
+            <td style="text-align: center">4530.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.2275<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905042</td>
+            <td style="text-align: center">560 N</td>
+            <td style="text-align: center">840 N</td>
+            <td style="text-align: center">560 N</td>
+            <td style="text-align: center">1575 N</td>
+            <td style="text-align: center">909.33 N</td>
+            <td style="text-align: center">1818.7 N</td>
+            <td style="text-align: center">38.293 inch</td>
+            <td style="text-align: center">1099.9 lb</td>
+            <td style="text-align: center">759.18 kg</td>
+            <td style="text-align: center">
+              575 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              2987.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4683.2 lb</td>
+            <td style="text-align: center">4640.7 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.3554<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905043</td>
+            <td style="text-align: center">573.33 N</td>
+            <td style="text-align: center">860 N</td>
+            <td style="text-align: center">573.33 N</td>
+            <td style="text-align: center">1612.5 N</td>
+            <td style="text-align: center">930.98 N</td>
+            <td style="text-align: center">1862 N</td>
+            <td style="text-align: center">38.215 inch</td>
+            <td style="text-align: center">1126.1 lb</td>
+            <td style="text-align: center">777.26 kg</td>
+            <td style="text-align: center">
+              588.69 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3067.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4794.7 lb</td>
+            <td style="text-align: center">4751.2 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.4833<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905044</td>
+            <td style="text-align: center">586.67 N</td>
+            <td style="text-align: center">880 N</td>
+            <td style="text-align: center">586.67 N</td>
+            <td style="text-align: center">1650 N</td>
+            <td style="text-align: center">952.63 N</td>
+            <td style="text-align: center">1905.3 N</td>
+            <td style="text-align: center">38.137 inch</td>
+            <td style="text-align: center">1152.3 lb</td>
+            <td style="text-align: center">795.34 kg</td>
+            <td style="text-align: center">
+              602.38 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3147.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">4906.2 lb</td>
+            <td style="text-align: center">4861.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.6112<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905045</td>
+            <td style="text-align: center">600 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">600 N</td>
+            <td style="text-align: center">1687.5 N</td>
+            <td style="text-align: center">974.28 N</td>
+            <td style="text-align: center">1948.6 N</td>
+            <td style="text-align: center">38.059 inch</td>
+            <td style="text-align: center">1178.5 lb</td>
+            <td style="text-align: center">813.41 kg</td>
+            <td style="text-align: center">
+              616.07 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3227.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5017.8 lb</td>
+            <td style="text-align: center">4972.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.7392<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905046</td>
+            <td style="text-align: center">613.33 N</td>
+            <td style="text-align: center">920 N</td>
+            <td style="text-align: center">613.33 N</td>
+            <td style="text-align: center">1725 N</td>
+            <td style="text-align: center">995.93 N</td>
+            <td style="text-align: center">1991.9 N</td>
+            <td style="text-align: center">37.981 inch</td>
+            <td style="text-align: center">1204.6 lb</td>
+            <td style="text-align: center">831.49 kg</td>
+            <td style="text-align: center">
+              629.76 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3307.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5129.3 lb</td>
+            <td style="text-align: center">5082.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.8672<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905047</td>
+            <td style="text-align: center">626.67 N</td>
+            <td style="text-align: center">940 N</td>
+            <td style="text-align: center">626.67 N</td>
+            <td style="text-align: center">1762.5 N</td>
+            <td style="text-align: center">1017.6 N</td>
+            <td style="text-align: center">2035.2 N</td>
+            <td style="text-align: center">37.903 inch</td>
+            <td style="text-align: center">1230.8 lb</td>
+            <td style="text-align: center">849.56 kg</td>
+            <td style="text-align: center">
+              643.45 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3387.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5240.8 lb</td>
+            <td style="text-align: center">5193.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              5.9952<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905048</td>
+            <td style="text-align: center">640 N</td>
+            <td style="text-align: center">960 N</td>
+            <td style="text-align: center">640 N</td>
+            <td style="text-align: center">1800 N</td>
+            <td style="text-align: center">1039.2 N</td>
+            <td style="text-align: center">2078.5 N</td>
+            <td style="text-align: center">37.825 inch</td>
+            <td style="text-align: center">1257 lb</td>
+            <td style="text-align: center">867.64 kg</td>
+            <td style="text-align: center">
+              657.14 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3467.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5352.3 lb</td>
+            <td style="text-align: center">5303.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.1232<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905049</td>
+            <td style="text-align: center">653.33 N</td>
+            <td style="text-align: center">980 N</td>
+            <td style="text-align: center">653.33 N</td>
+            <td style="text-align: center">1837.5 N</td>
+            <td style="text-align: center">1060.9 N</td>
+            <td style="text-align: center">2121.8 N</td>
+            <td style="text-align: center">37.747 inch</td>
+            <td style="text-align: center">1283.2 lb</td>
+            <td style="text-align: center">885.71 kg</td>
+            <td style="text-align: center">
+              670.83 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3547.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5463.8 lb</td>
+            <td style="text-align: center">5414.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.2513<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905050</td>
+            <td style="text-align: center">666.67 N</td>
+            <td style="text-align: center">1000 N</td>
+            <td style="text-align: center">666.67 N</td>
+            <td style="text-align: center">1875 N</td>
+            <td style="text-align: center">1082.5 N</td>
+            <td style="text-align: center">2165.1 N</td>
+            <td style="text-align: center">37.669 inch</td>
+            <td style="text-align: center">1309.4 lb</td>
+            <td style="text-align: center">903.79 kg</td>
+            <td style="text-align: center">
+              684.52 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3627.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5575.3 lb</td>
+            <td style="text-align: center">5524.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.3794<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905051</td>
+            <td style="text-align: center">680 N</td>
+            <td style="text-align: center">1020 N</td>
+            <td style="text-align: center">680 N</td>
+            <td style="text-align: center">1912.5 N</td>
+            <td style="text-align: center">1104.2 N</td>
+            <td style="text-align: center">2208.4 N</td>
+            <td style="text-align: center">37.591 inch</td>
+            <td style="text-align: center">1335.6 lb</td>
+            <td style="text-align: center">921.87 kg</td>
+            <td style="text-align: center">
+              698.21 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3707.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5686.8 lb</td>
+            <td style="text-align: center">5635.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.5075<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905052</td>
+            <td style="text-align: center">693.33 N</td>
+            <td style="text-align: center">1040 N</td>
+            <td style="text-align: center">693.33 N</td>
+            <td style="text-align: center">1950 N</td>
+            <td style="text-align: center">1125.8 N</td>
+            <td style="text-align: center">2251.7 N</td>
+            <td style="text-align: center">37.513 inch</td>
+            <td style="text-align: center">1361.8 lb</td>
+            <td style="text-align: center">939.94 kg</td>
+            <td style="text-align: center">
+              711.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3787.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5798.3 lb</td>
+            <td style="text-align: center">5745.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.6357<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905053</td>
+            <td style="text-align: center">706.67 N</td>
+            <td style="text-align: center">1060 N</td>
+            <td style="text-align: center">706.67 N</td>
+            <td style="text-align: center">1987.5 N</td>
+            <td style="text-align: center">1147.5 N</td>
+            <td style="text-align: center">2295 N</td>
+            <td style="text-align: center">37.435 inch</td>
+            <td style="text-align: center">1388 lb</td>
+            <td style="text-align: center">958.02 kg</td>
+            <td style="text-align: center">
+              725.59 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3867.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">5909.8 lb</td>
+            <td style="text-align: center">5856.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.7639<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905054</td>
+            <td style="text-align: center">720 N</td>
+            <td style="text-align: center">1080 N</td>
+            <td style="text-align: center">720 N</td>
+            <td style="text-align: center">2025 N</td>
+            <td style="text-align: center">1169.1 N</td>
+            <td style="text-align: center">2338.3 N</td>
+            <td style="text-align: center">37.357 inch</td>
+            <td style="text-align: center">1414.2 lb</td>
+            <td style="text-align: center">976.09 kg</td>
+            <td style="text-align: center">
+              739.29 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              3947.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6021.3 lb</td>
+            <td style="text-align: center">5966.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              6.8921<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905055</td>
+            <td style="text-align: center">733.33 N</td>
+            <td style="text-align: center">1100 N</td>
+            <td style="text-align: center">733.33 N</td>
+            <td style="text-align: center">2062.5 N</td>
+            <td style="text-align: center">1190.8 N</td>
+            <td style="text-align: center">2381.6 N</td>
+            <td style="text-align: center">37.279 inch</td>
+            <td style="text-align: center">1440.3 lb</td>
+            <td style="text-align: center">994.17 kg</td>
+            <td style="text-align: center">
+              752.98 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4027.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6132.8 lb</td>
+            <td style="text-align: center">6077.1 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.0204<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905056</td>
+            <td style="text-align: center">746.67 N</td>
+            <td style="text-align: center">1120 N</td>
+            <td style="text-align: center">746.67 N</td>
+            <td style="text-align: center">2100 N</td>
+            <td style="text-align: center">1212.4 N</td>
+            <td style="text-align: center">2424.9 N</td>
+            <td style="text-align: center">37.201 inch</td>
+            <td style="text-align: center">1466.5 lb</td>
+            <td style="text-align: center">1012.2 kg</td>
+            <td style="text-align: center">
+              766.67 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4107.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6244.3 lb</td>
+            <td style="text-align: center">6187.6 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.1487<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905057</td>
+            <td style="text-align: center">760 N</td>
+            <td style="text-align: center">1140 N</td>
+            <td style="text-align: center">760 N</td>
+            <td style="text-align: center">2137.5 N</td>
+            <td style="text-align: center">1234.1 N</td>
+            <td style="text-align: center">2468.2 N</td>
+            <td style="text-align: center">37.123 inch</td>
+            <td style="text-align: center">1492.7 lb</td>
+            <td style="text-align: center">1030.3 kg</td>
+            <td style="text-align: center">
+              780.36 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4187.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6355.8 lb</td>
+            <td style="text-align: center">6298 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.277<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905058</td>
+            <td style="text-align: center">773.33 N</td>
+            <td style="text-align: center">1160 N</td>
+            <td style="text-align: center">773.33 N</td>
+            <td style="text-align: center">2175 N</td>
+            <td style="text-align: center">1255.7 N</td>
+            <td style="text-align: center">2511.5 N</td>
+            <td style="text-align: center">37.045 inch</td>
+            <td style="text-align: center">1518.9 lb</td>
+            <td style="text-align: center">1048.4 kg</td>
+            <td style="text-align: center">
+              794.05 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4267.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6467.3 lb</td>
+            <td style="text-align: center">6408.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.4054<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905059</td>
+            <td style="text-align: center">786.67 N</td>
+            <td style="text-align: center">1180 N</td>
+            <td style="text-align: center">786.67 N</td>
+            <td style="text-align: center">2212.5 N</td>
+            <td style="text-align: center">1277.4 N</td>
+            <td style="text-align: center">2554.8 N</td>
+            <td style="text-align: center">36.967 inch</td>
+            <td style="text-align: center">1545.1 lb</td>
+            <td style="text-align: center">1066.5 kg</td>
+            <td style="text-align: center">
+              807.74 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4347.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6578.8 lb</td>
+            <td style="text-align: center">6519 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.5338<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905060</td>
+            <td style="text-align: center">800 N</td>
+            <td style="text-align: center">1200 N</td>
+            <td style="text-align: center">800 N</td>
+            <td style="text-align: center">2250 N</td>
+            <td style="text-align: center">1299 N</td>
+            <td style="text-align: center">2598.1 N</td>
+            <td style="text-align: center">36.889 inch</td>
+            <td style="text-align: center">1571.3 lb</td>
+            <td style="text-align: center">1084.5 kg</td>
+            <td style="text-align: center">
+              821.43 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4427.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6690.3 lb</td>
+            <td style="text-align: center">6629.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.6623<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905061</td>
+            <td style="text-align: center">813.33 N</td>
+            <td style="text-align: center">1220 N</td>
+            <td style="text-align: center">813.33 N</td>
+            <td style="text-align: center">2287.5 N</td>
+            <td style="text-align: center">1320.7 N</td>
+            <td style="text-align: center">2641.4 N</td>
+            <td style="text-align: center">36.811 inch</td>
+            <td style="text-align: center">1597.5 lb</td>
+            <td style="text-align: center">1102.6 kg</td>
+            <td style="text-align: center">
+              835.12 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4507.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6801.8 lb</td>
+            <td style="text-align: center">6740 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.7907<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905062</td>
+            <td style="text-align: center">826.67 N</td>
+            <td style="text-align: center">1240 N</td>
+            <td style="text-align: center">826.67 N</td>
+            <td style="text-align: center">2325 N</td>
+            <td style="text-align: center">1342.3 N</td>
+            <td style="text-align: center">2684.7 N</td>
+            <td style="text-align: center">36.733 inch</td>
+            <td style="text-align: center">1623.7 lb</td>
+            <td style="text-align: center">1120.7 kg</td>
+            <td style="text-align: center">
+              848.81 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4587.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">6913.3 lb</td>
+            <td style="text-align: center">6850.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              7.9193<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905063</td>
+            <td style="text-align: center">840 N</td>
+            <td style="text-align: center">1260 N</td>
+            <td style="text-align: center">840 N</td>
+            <td style="text-align: center">2362.5 N</td>
+            <td style="text-align: center">1364 N</td>
+            <td style="text-align: center">2728 N</td>
+            <td style="text-align: center">36.655 inch</td>
+            <td style="text-align: center">1649.8 lb</td>
+            <td style="text-align: center">1138.8 kg</td>
+            <td style="text-align: center">
+              862.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4667.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7024.9 lb</td>
+            <td style="text-align: center">6961 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.0478<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905064</td>
+            <td style="text-align: center">853.33 N</td>
+            <td style="text-align: center">1280 N</td>
+            <td style="text-align: center">853.33 N</td>
+            <td style="text-align: center">2400 N</td>
+            <td style="text-align: center">1385.6 N</td>
+            <td style="text-align: center">2771.3 N</td>
+            <td style="text-align: center">36.577 inch</td>
+            <td style="text-align: center">1676 lb</td>
+            <td style="text-align: center">1156.9 kg</td>
+            <td style="text-align: center">
+              876.19 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4747.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7136.4 lb</td>
+            <td style="text-align: center">7071.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.1765<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905065</td>
+            <td style="text-align: center">866.67 N</td>
+            <td style="text-align: center">1300 N</td>
+            <td style="text-align: center">866.67 N</td>
+            <td style="text-align: center">2437.5 N</td>
+            <td style="text-align: center">1407.3 N</td>
+            <td style="text-align: center">2814.6 N</td>
+            <td style="text-align: center">36.499 inch</td>
+            <td style="text-align: center">1702.2 lb</td>
+            <td style="text-align: center">1174.9 kg</td>
+            <td style="text-align: center">
+              889.88 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4827.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7247.9 lb</td>
+            <td style="text-align: center">7182 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.3051<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905066</td>
+            <td style="text-align: center">880 N</td>
+            <td style="text-align: center">1320 N</td>
+            <td style="text-align: center">880 N</td>
+            <td style="text-align: center">2475 N</td>
+            <td style="text-align: center">1428.9 N</td>
+            <td style="text-align: center">2857.9 N</td>
+            <td style="text-align: center">36.421 inch</td>
+            <td style="text-align: center">1728.4 lb</td>
+            <td style="text-align: center">1193 kg</td>
+            <td style="text-align: center">
+              903.57 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4907.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7359.4 lb</td>
+            <td style="text-align: center">7292.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.4338<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905067</td>
+            <td style="text-align: center">893.33 N</td>
+            <td style="text-align: center">1340 N</td>
+            <td style="text-align: center">893.33 N</td>
+            <td style="text-align: center">2512.5 N</td>
+            <td style="text-align: center">1450.6 N</td>
+            <td style="text-align: center">2901.2 N</td>
+            <td style="text-align: center">36.343 inch</td>
+            <td style="text-align: center">1754.6 lb</td>
+            <td style="text-align: center">1211.1 kg</td>
+            <td style="text-align: center">
+              917.26 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              4987.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7470.9 lb</td>
+            <td style="text-align: center">7403 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.5625<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905068</td>
+            <td style="text-align: center">906.67 N</td>
+            <td style="text-align: center">1360 N</td>
+            <td style="text-align: center">906.67 N</td>
+            <td style="text-align: center">2550 N</td>
+            <td style="text-align: center">1472.2 N</td>
+            <td style="text-align: center">2944.5 N</td>
+            <td style="text-align: center">36.265 inch</td>
+            <td style="text-align: center">1780.8 lb</td>
+            <td style="text-align: center">1229.2 kg</td>
+            <td style="text-align: center">
+              930.95 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5067.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7582.4 lb</td>
+            <td style="text-align: center">7513.5 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.6913<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905069</td>
+            <td style="text-align: center">920 N</td>
+            <td style="text-align: center">1380 N</td>
+            <td style="text-align: center">920 N</td>
+            <td style="text-align: center">2587.5 N</td>
+            <td style="text-align: center">1493.9 N</td>
+            <td style="text-align: center">2987.8 N</td>
+            <td style="text-align: center">36.187 inch</td>
+            <td style="text-align: center">1807 lb</td>
+            <td style="text-align: center">1247.2 kg</td>
+            <td style="text-align: center">
+              944.64 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5147.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7693.9 lb</td>
+            <td style="text-align: center">7624 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.8201<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905070</td>
+            <td style="text-align: center">933.33 N</td>
+            <td style="text-align: center">1400 N</td>
+            <td style="text-align: center">933.33 N</td>
+            <td style="text-align: center">2625 N</td>
+            <td style="text-align: center">1515.5 N</td>
+            <td style="text-align: center">3031.1 N</td>
+            <td style="text-align: center">36.109 inch</td>
+            <td style="text-align: center">1833.2 lb</td>
+            <td style="text-align: center">1265.3 kg</td>
+            <td style="text-align: center">
+              958.33 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5227.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7805.4 lb</td>
+            <td style="text-align: center">7734.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              8.949<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905071</td>
+            <td style="text-align: center">946.67 N</td>
+            <td style="text-align: center">1420 N</td>
+            <td style="text-align: center">946.67 N</td>
+            <td style="text-align: center">2662.5 N</td>
+            <td style="text-align: center">1537.2 N</td>
+            <td style="text-align: center">3074.4 N</td>
+            <td style="text-align: center">36.031 inch</td>
+            <td style="text-align: center">1859.3 lb</td>
+            <td style="text-align: center">1283.4 kg</td>
+            <td style="text-align: center">
+              972.02 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5307.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">7916.9 lb</td>
+            <td style="text-align: center">7844.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.0779<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905072</td>
+            <td style="text-align: center">960 N</td>
+            <td style="text-align: center">1440 N</td>
+            <td style="text-align: center">960 N</td>
+            <td style="text-align: center">2700 N</td>
+            <td style="text-align: center">1558.8 N</td>
+            <td style="text-align: center">3117.7 N</td>
+            <td style="text-align: center">35.953 inch</td>
+            <td style="text-align: center">1885.5 lb</td>
+            <td style="text-align: center">1301.5 kg</td>
+            <td style="text-align: center">
+              985.71 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5387.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8028.4 lb</td>
+            <td style="text-align: center">7955.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.2069<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905073</td>
+            <td style="text-align: center">973.33 N</td>
+            <td style="text-align: center">1460 N</td>
+            <td style="text-align: center">973.33 N</td>
+            <td style="text-align: center">2737.5 N</td>
+            <td style="text-align: center">1580.5 N</td>
+            <td style="text-align: center">3161 N</td>
+            <td style="text-align: center">35.875 inch</td>
+            <td style="text-align: center">1911.7 lb</td>
+            <td style="text-align: center">1319.5 kg</td>
+            <td style="text-align: center">
+              999.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5467.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8139.9 lb</td>
+            <td style="text-align: center">8065.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.3359<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905074</td>
+            <td style="text-align: center">986.67 N</td>
+            <td style="text-align: center">1480 N</td>
+            <td style="text-align: center">986.67 N</td>
+            <td style="text-align: center">2775 N</td>
+            <td style="text-align: center">1602.1 N</td>
+            <td style="text-align: center">3204.3 N</td>
+            <td style="text-align: center">35.797 inch</td>
+            <td style="text-align: center">1937.9 lb</td>
+            <td style="text-align: center">1337.6 kg</td>
+            <td style="text-align: center">
+              1013.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5547.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8251.4 lb</td>
+            <td style="text-align: center">8176.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.465<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905075</td>
+            <td style="text-align: center">1000 N</td>
+            <td style="text-align: center">1500 N</td>
+            <td style="text-align: center">1000 N</td>
+            <td style="text-align: center">2812.5 N</td>
+            <td style="text-align: center">1623.8 N</td>
+            <td style="text-align: center">3247.6 N</td>
+            <td style="text-align: center">35.719 inch</td>
+            <td style="text-align: center">1964.1 lb</td>
+            <td style="text-align: center">1355.7 kg</td>
+            <td style="text-align: center">
+              1026.8 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5627.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8362.9 lb</td>
+            <td style="text-align: center">8286.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.5941<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905076</td>
+            <td style="text-align: center">1013.3 N</td>
+            <td style="text-align: center">1520 N</td>
+            <td style="text-align: center">1013.3 N</td>
+            <td style="text-align: center">2850 N</td>
+            <td style="text-align: center">1645.4 N</td>
+            <td style="text-align: center">3290.9 N</td>
+            <td style="text-align: center">35.641 inch</td>
+            <td style="text-align: center">1990.3 lb</td>
+            <td style="text-align: center">1373.8 kg</td>
+            <td style="text-align: center">
+              1040.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5707.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8474.4 lb</td>
+            <td style="text-align: center">8397.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.7232<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905077</td>
+            <td style="text-align: center">1026.7 N</td>
+            <td style="text-align: center">1540 N</td>
+            <td style="text-align: center">1026.7 N</td>
+            <td style="text-align: center">2887.5 N</td>
+            <td style="text-align: center">1667.1 N</td>
+            <td style="text-align: center">3334.2 N</td>
+            <td style="text-align: center">35.563 inch</td>
+            <td style="text-align: center">2016.5 lb</td>
+            <td style="text-align: center">1391.8 kg</td>
+            <td style="text-align: center">
+              1054.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5787.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8585.9 lb</td>
+            <td style="text-align: center">8507.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.8524<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905078</td>
+            <td style="text-align: center">1040 N</td>
+            <td style="text-align: center">1560 N</td>
+            <td style="text-align: center">1040 N</td>
+            <td style="text-align: center">2925 N</td>
+            <td style="text-align: center">1688.7 N</td>
+            <td style="text-align: center">3377.5 N</td>
+            <td style="text-align: center">35.485 inch</td>
+            <td style="text-align: center">2042.7 lb</td>
+            <td style="text-align: center">1409.9 kg</td>
+            <td style="text-align: center">
+              1067.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5867.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8697.4 lb</td>
+            <td style="text-align: center">8618.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              9.9817<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905079</td>
+            <td style="text-align: center">1053.3 N</td>
+            <td style="text-align: center">1580 N</td>
+            <td style="text-align: center">1053.3 N</td>
+            <td style="text-align: center">2962.5 N</td>
+            <td style="text-align: center">1710.4 N</td>
+            <td style="text-align: center">3420.8 N</td>
+            <td style="text-align: center">35.407 inch</td>
+            <td style="text-align: center">2068.9 lb</td>
+            <td style="text-align: center">1428 kg</td>
+            <td style="text-align: center">
+              1081.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              5947.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8808.9 lb</td>
+            <td style="text-align: center">8728.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.111<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905080</td>
+            <td style="text-align: center">1066.7 N</td>
+            <td style="text-align: center">1600 N</td>
+            <td style="text-align: center">1066.7 N</td>
+            <td style="text-align: center">3000 N</td>
+            <td style="text-align: center">1732.1 N</td>
+            <td style="text-align: center">3464.1 N</td>
+            <td style="text-align: center">35.329 inch</td>
+            <td style="text-align: center">2095 lb</td>
+            <td style="text-align: center">1446.1 kg</td>
+            <td style="text-align: center">
+              1095.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6027.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">8920.4 lb</td>
+            <td style="text-align: center">8839.4 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.24<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905081</td>
+            <td style="text-align: center">1080 N</td>
+            <td style="text-align: center">1620 N</td>
+            <td style="text-align: center">1080 N</td>
+            <td style="text-align: center">3037.5 N</td>
+            <td style="text-align: center">1753.7 N</td>
+            <td style="text-align: center">3507.4 N</td>
+            <td style="text-align: center">35.251 inch</td>
+            <td style="text-align: center">2121.2 lb</td>
+            <td style="text-align: center">1464.1 kg</td>
+            <td style="text-align: center">
+              1108.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6107.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9032 lb</td>
+            <td style="text-align: center">8949.9 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.37<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905082</td>
+            <td style="text-align: center">1093.3 N</td>
+            <td style="text-align: center">1640 N</td>
+            <td style="text-align: center">1093.3 N</td>
+            <td style="text-align: center">3075 N</td>
+            <td style="text-align: center">1775.4 N</td>
+            <td style="text-align: center">3550.7 N</td>
+            <td style="text-align: center">35.173 inch</td>
+            <td style="text-align: center">2147.4 lb</td>
+            <td style="text-align: center">1482.2 kg</td>
+            <td style="text-align: center">
+              1122.6 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6187.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9143.5 lb</td>
+            <td style="text-align: center">9060.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.499<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905083</td>
+            <td style="text-align: center">1106.7 N</td>
+            <td style="text-align: center">1660 N</td>
+            <td style="text-align: center">1106.7 N</td>
+            <td style="text-align: center">3112.5 N</td>
+            <td style="text-align: center">1797 N</td>
+            <td style="text-align: center">3594 N</td>
+            <td style="text-align: center">35.095 inch</td>
+            <td style="text-align: center">2173.6 lb</td>
+            <td style="text-align: center">1500.3 kg</td>
+            <td style="text-align: center">
+              1136.3 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6267.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9255 lb</td>
+            <td style="text-align: center">9170.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.629<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905084</td>
+            <td style="text-align: center">1120 N</td>
+            <td style="text-align: center">1680 N</td>
+            <td style="text-align: center">1120 N</td>
+            <td style="text-align: center">3150 N</td>
+            <td style="text-align: center">1818.7 N</td>
+            <td style="text-align: center">3637.3 N</td>
+            <td style="text-align: center">35.017 inch</td>
+            <td style="text-align: center">2199.8 lb</td>
+            <td style="text-align: center">1518.4 kg</td>
+            <td style="text-align: center">
+              1150 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6347.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9366.5 lb</td>
+            <td style="text-align: center">9281.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.758<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905085</td>
+            <td style="text-align: center">1133.3 N</td>
+            <td style="text-align: center">1700 N</td>
+            <td style="text-align: center">1133.3 N</td>
+            <td style="text-align: center">3187.5 N</td>
+            <td style="text-align: center">1840.3 N</td>
+            <td style="text-align: center">3680.6 N</td>
+            <td style="text-align: center">34.939 inch</td>
+            <td style="text-align: center">2226 lb</td>
+            <td style="text-align: center">1536.4 kg</td>
+            <td style="text-align: center">
+              1163.7 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6427.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9478 lb</td>
+            <td style="text-align: center">9391.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              10.888<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905086</td>
+            <td style="text-align: center">1146.7 N</td>
+            <td style="text-align: center">1720 N</td>
+            <td style="text-align: center">1146.7 N</td>
+            <td style="text-align: center">3225 N</td>
+            <td style="text-align: center">1862 N</td>
+            <td style="text-align: center">3723.9 N</td>
+            <td style="text-align: center">34.861 inch</td>
+            <td style="text-align: center">2252.2 lb</td>
+            <td style="text-align: center">1554.5 kg</td>
+            <td style="text-align: center">
+              1177.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6507.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9589.5 lb</td>
+            <td style="text-align: center">9502.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.018<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905087</td>
+            <td style="text-align: center">1160 N</td>
+            <td style="text-align: center">1740 N</td>
+            <td style="text-align: center">1160 N</td>
+            <td style="text-align: center">3262.5 N</td>
+            <td style="text-align: center">1883.6 N</td>
+            <td style="text-align: center">3767.2 N</td>
+            <td style="text-align: center">34.783 inch</td>
+            <td style="text-align: center">2278.4 lb</td>
+            <td style="text-align: center">1572.6 kg</td>
+            <td style="text-align: center">
+              1191.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6587.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9701 lb</td>
+            <td style="text-align: center">9612.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.147<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905088</td>
+            <td style="text-align: center">1173.3 N</td>
+            <td style="text-align: center">1760 N</td>
+            <td style="text-align: center">1173.3 N</td>
+            <td style="text-align: center">3300 N</td>
+            <td style="text-align: center">1905.3 N</td>
+            <td style="text-align: center">3810.5 N</td>
+            <td style="text-align: center">34.705 inch</td>
+            <td style="text-align: center">2304.5 lb</td>
+            <td style="text-align: center">1590.7 kg</td>
+            <td style="text-align: center">
+              1204.8 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6667.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9812.5 lb</td>
+            <td style="text-align: center">9723.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.277<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905089</td>
+            <td style="text-align: center">1186.7 N</td>
+            <td style="text-align: center">1780 N</td>
+            <td style="text-align: center">1186.7 N</td>
+            <td style="text-align: center">3337.5 N</td>
+            <td style="text-align: center">1926.9 N</td>
+            <td style="text-align: center">3853.8 N</td>
+            <td style="text-align: center">34.627 inch</td>
+            <td style="text-align: center">2330.7 lb</td>
+            <td style="text-align: center">1608.7 kg</td>
+            <td style="text-align: center">
+              1218.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6747.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">9924 lb</td>
+            <td style="text-align: center">9833.8 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.407<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905090</td>
+            <td style="text-align: center">1200 N</td>
+            <td style="text-align: center">1800 N</td>
+            <td style="text-align: center">1200 N</td>
+            <td style="text-align: center">3375 N</td>
+            <td style="text-align: center">1948.6 N</td>
+            <td style="text-align: center">3897.1 N</td>
+            <td style="text-align: center">34.549 inch</td>
+            <td style="text-align: center">2356.9 lb</td>
+            <td style="text-align: center">1626.8 kg</td>
+            <td style="text-align: center">
+              1232.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6827.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10036 lb</td>
+            <td style="text-align: center">9944.3 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.537<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905091</td>
+            <td style="text-align: center">1213.3 N</td>
+            <td style="text-align: center">1820 N</td>
+            <td style="text-align: center">1213.3 N</td>
+            <td style="text-align: center">3412.5 N</td>
+            <td style="text-align: center">1970.2 N</td>
+            <td style="text-align: center">3940.4 N</td>
+            <td style="text-align: center">34.471 inch</td>
+            <td style="text-align: center">2383.1 lb</td>
+            <td style="text-align: center">1644.9 kg</td>
+            <td style="text-align: center">
+              1245.8 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6907.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10147 lb</td>
+            <td style="text-align: center">10055 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.667<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905092</td>
+            <td style="text-align: center">1226.7 N</td>
+            <td style="text-align: center">1840 N</td>
+            <td style="text-align: center">1226.7 N</td>
+            <td style="text-align: center">3450 N</td>
+            <td style="text-align: center">1991.9 N</td>
+            <td style="text-align: center">3983.7 N</td>
+            <td style="text-align: center">34.393 inch</td>
+            <td style="text-align: center">2409.3 lb</td>
+            <td style="text-align: center">1663 kg</td>
+            <td style="text-align: center">
+              1259.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              6987.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10259 lb</td>
+            <td style="text-align: center">10165 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.797<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905093</td>
+            <td style="text-align: center">1240 N</td>
+            <td style="text-align: center">1860 N</td>
+            <td style="text-align: center">1240 N</td>
+            <td style="text-align: center">3487.5 N</td>
+            <td style="text-align: center">2013.5 N</td>
+            <td style="text-align: center">4027 N</td>
+            <td style="text-align: center">34.315 inch</td>
+            <td style="text-align: center">2435.5 lb</td>
+            <td style="text-align: center">1681 kg</td>
+            <td style="text-align: center">
+              1273.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7067.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10370 lb</td>
+            <td style="text-align: center">10276 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              11.927<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905094</td>
+            <td style="text-align: center">1253.3 N</td>
+            <td style="text-align: center">1880 N</td>
+            <td style="text-align: center">1253.3 N</td>
+            <td style="text-align: center">3525 N</td>
+            <td style="text-align: center">2035.2 N</td>
+            <td style="text-align: center">4070.3 N</td>
+            <td style="text-align: center">34.237 inch</td>
+            <td style="text-align: center">2461.7 lb</td>
+            <td style="text-align: center">1699.1 kg</td>
+            <td style="text-align: center">
+              1286.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7147.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10482 lb</td>
+            <td style="text-align: center">10386 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.057<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905095</td>
+            <td style="text-align: center">1266.7 N</td>
+            <td style="text-align: center">1900 N</td>
+            <td style="text-align: center">1266.7 N</td>
+            <td style="text-align: center">3562.5 N</td>
+            <td style="text-align: center">2056.8 N</td>
+            <td style="text-align: center">4113.6 N</td>
+            <td style="text-align: center">34.159 inch</td>
+            <td style="text-align: center">2487.9 lb</td>
+            <td style="text-align: center">1717.2 kg</td>
+            <td style="text-align: center">
+              1300.6 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7227.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10593 lb</td>
+            <td style="text-align: center">10497 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.187<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905096</td>
+            <td style="text-align: center">1280 N</td>
+            <td style="text-align: center">1920 N</td>
+            <td style="text-align: center">1280 N</td>
+            <td style="text-align: center">3600 N</td>
+            <td style="text-align: center">2078.5 N</td>
+            <td style="text-align: center">4156.9 N</td>
+            <td style="text-align: center">34.081 inch</td>
+            <td style="text-align: center">2514.1 lb</td>
+            <td style="text-align: center">1735.3 kg</td>
+            <td style="text-align: center">
+              1314.3 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7307.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10705 lb</td>
+            <td style="text-align: center">10607 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.318<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905097</td>
+            <td style="text-align: center">1293.3 N</td>
+            <td style="text-align: center">1940 N</td>
+            <td style="text-align: center">1293.3 N</td>
+            <td style="text-align: center">3637.5 N</td>
+            <td style="text-align: center">2100.1 N</td>
+            <td style="text-align: center">4200.2 N</td>
+            <td style="text-align: center">34.003 inch</td>
+            <td style="text-align: center">2540.2 lb</td>
+            <td style="text-align: center">1753.4 kg</td>
+            <td style="text-align: center">
+              1328 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7387.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10816 lb</td>
+            <td style="text-align: center">10718 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.448<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905098</td>
+            <td style="text-align: center">1306.7 N</td>
+            <td style="text-align: center">1960 N</td>
+            <td style="text-align: center">1306.7 N</td>
+            <td style="text-align: center">3675 N</td>
+            <td style="text-align: center">2121.8 N</td>
+            <td style="text-align: center">4243.5 N</td>
+            <td style="text-align: center">33.925 inch</td>
+            <td style="text-align: center">2566.4 lb</td>
+            <td style="text-align: center">1771.4 kg</td>
+            <td style="text-align: center">
+              1341.7 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7467.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">10928 lb</td>
+            <td style="text-align: center">10828 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.579<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905099</td>
+            <td style="text-align: center">1320 N</td>
+            <td style="text-align: center">1980 N</td>
+            <td style="text-align: center">1320 N</td>
+            <td style="text-align: center">3712.5 N</td>
+            <td style="text-align: center">2143.4 N</td>
+            <td style="text-align: center">4286.8 N</td>
+            <td style="text-align: center">33.847 inch</td>
+            <td style="text-align: center">2592.6 lb</td>
+            <td style="text-align: center">1789.5 kg</td>
+            <td style="text-align: center">
+              1355.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7547.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11039 lb</td>
+            <td style="text-align: center">10939 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.709<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905100</td>
+            <td style="text-align: center">1333.3 N</td>
+            <td style="text-align: center">2000 N</td>
+            <td style="text-align: center">1333.3 N</td>
+            <td style="text-align: center">3750 N</td>
+            <td style="text-align: center">2165.1 N</td>
+            <td style="text-align: center">4330.1 N</td>
+            <td style="text-align: center">33.769 inch</td>
+            <td style="text-align: center">2618.8 lb</td>
+            <td style="text-align: center">1807.6 kg</td>
+            <td style="text-align: center">
+              1369 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7627.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11151 lb</td>
+            <td style="text-align: center">11049 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.84<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905101</td>
+            <td style="text-align: center">1346.7 N</td>
+            <td style="text-align: center">2020 N</td>
+            <td style="text-align: center">1346.7 N</td>
+            <td style="text-align: center">3787.5 N</td>
+            <td style="text-align: center">2186.7 N</td>
+            <td style="text-align: center">4373.4 N</td>
+            <td style="text-align: center">33.691 inch</td>
+            <td style="text-align: center">2645 lb</td>
+            <td style="text-align: center">1825.7 kg</td>
+            <td style="text-align: center">
+              1382.7 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7707.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11262 lb</td>
+            <td style="text-align: center">11160 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              12.97<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905102</td>
+            <td style="text-align: center">1360 N</td>
+            <td style="text-align: center">2040 N</td>
+            <td style="text-align: center">1360 N</td>
+            <td style="text-align: center">3825 N</td>
+            <td style="text-align: center">2208.4 N</td>
+            <td style="text-align: center">4416.7 N</td>
+            <td style="text-align: center">33.613 inch</td>
+            <td style="text-align: center">2671.2 lb</td>
+            <td style="text-align: center">1843.7 kg</td>
+            <td style="text-align: center">
+              1396.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7787.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11374 lb</td>
+            <td style="text-align: center">11270 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.101<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905103</td>
+            <td style="text-align: center">1373.3 N</td>
+            <td style="text-align: center">2060 N</td>
+            <td style="text-align: center">1373.3 N</td>
+            <td style="text-align: center">3862.5 N</td>
+            <td style="text-align: center">2230 N</td>
+            <td style="text-align: center">4460 N</td>
+            <td style="text-align: center">33.535 inch</td>
+            <td style="text-align: center">2697.4 lb</td>
+            <td style="text-align: center">1861.8 kg</td>
+            <td style="text-align: center">
+              1410.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7867.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11485 lb</td>
+            <td style="text-align: center">11381 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.232<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905104</td>
+            <td style="text-align: center">1386.7 N</td>
+            <td style="text-align: center">2080 N</td>
+            <td style="text-align: center">1386.7 N</td>
+            <td style="text-align: center">3900 N</td>
+            <td style="text-align: center">2251.7 N</td>
+            <td style="text-align: center">4503.3 N</td>
+            <td style="text-align: center">33.457 inch</td>
+            <td style="text-align: center">2723.6 lb</td>
+            <td style="text-align: center">1879.9 kg</td>
+            <td style="text-align: center">
+              1423.8 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              7947.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11597 lb</td>
+            <td style="text-align: center">11491 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.362<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905105</td>
+            <td style="text-align: center">1400 N</td>
+            <td style="text-align: center">2100 N</td>
+            <td style="text-align: center">1400 N</td>
+            <td style="text-align: center">3937.5 N</td>
+            <td style="text-align: center">2273.3 N</td>
+            <td style="text-align: center">4546.6 N</td>
+            <td style="text-align: center">33.379 inch</td>
+            <td style="text-align: center">2749.7 lb</td>
+            <td style="text-align: center">1898 kg</td>
+            <td style="text-align: center">
+              1437.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8027.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11708 lb</td>
+            <td style="text-align: center">11602 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.493<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905106</td>
+            <td style="text-align: center">1413.3 N</td>
+            <td style="text-align: center">2120 N</td>
+            <td style="text-align: center">1413.3 N</td>
+            <td style="text-align: center">3975 N</td>
+            <td style="text-align: center">2295 N</td>
+            <td style="text-align: center">4589.9 N</td>
+            <td style="text-align: center">33.301 inch</td>
+            <td style="text-align: center">2775.9 lb</td>
+            <td style="text-align: center">1916 kg</td>
+            <td style="text-align: center">
+              1451.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8107.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11820 lb</td>
+            <td style="text-align: center">11712 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.624<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905107</td>
+            <td style="text-align: center">1426.7 N</td>
+            <td style="text-align: center">2140 N</td>
+            <td style="text-align: center">1426.7 N</td>
+            <td style="text-align: center">4012.5 N</td>
+            <td style="text-align: center">2316.6 N</td>
+            <td style="text-align: center">4633.2 N</td>
+            <td style="text-align: center">33.223 inch</td>
+            <td style="text-align: center">2802.1 lb</td>
+            <td style="text-align: center">1934.1 kg</td>
+            <td style="text-align: center">
+              1464.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8187.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">11931 lb</td>
+            <td style="text-align: center">11823 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.755<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905108</td>
+            <td style="text-align: center">1440 N</td>
+            <td style="text-align: center">2160 N</td>
+            <td style="text-align: center">1440 N</td>
+            <td style="text-align: center">4050 N</td>
+            <td style="text-align: center">2338.3 N</td>
+            <td style="text-align: center">4676.5 N</td>
+            <td style="text-align: center">33.145 inch</td>
+            <td style="text-align: center">2828.3 lb</td>
+            <td style="text-align: center">1952.2 kg</td>
+            <td style="text-align: center">
+              1478.6 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8267.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12043 lb</td>
+            <td style="text-align: center">11933 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              13.887<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905109</td>
+            <td style="text-align: center">1453.3 N</td>
+            <td style="text-align: center">2180 N</td>
+            <td style="text-align: center">1453.3 N</td>
+            <td style="text-align: center">4087.5 N</td>
+            <td style="text-align: center">2359.9 N</td>
+            <td style="text-align: center">4719.8 N</td>
+            <td style="text-align: center">33.067 inch</td>
+            <td style="text-align: center">2854.5 lb</td>
+            <td style="text-align: center">1970.3 kg</td>
+            <td style="text-align: center">
+              1492.3 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8347.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12154 lb</td>
+            <td style="text-align: center">12044 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.018<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905110</td>
+            <td style="text-align: center">1466.7 N</td>
+            <td style="text-align: center">2200 N</td>
+            <td style="text-align: center">1466.7 N</td>
+            <td style="text-align: center">4125 N</td>
+            <td style="text-align: center">2381.6 N</td>
+            <td style="text-align: center">4763.1 N</td>
+            <td style="text-align: center">32.989 inch</td>
+            <td style="text-align: center">2880.7 lb</td>
+            <td style="text-align: center">1988.3 kg</td>
+            <td style="text-align: center">
+              1506 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8427.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12266 lb</td>
+            <td style="text-align: center">12154 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.149<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905111</td>
+            <td style="text-align: center">1480 N</td>
+            <td style="text-align: center">2220 N</td>
+            <td style="text-align: center">1480 N</td>
+            <td style="text-align: center">4162.5 N</td>
+            <td style="text-align: center">2403.2 N</td>
+            <td style="text-align: center">4806.4 N</td>
+            <td style="text-align: center">32.911 inch</td>
+            <td style="text-align: center">2906.9 lb</td>
+            <td style="text-align: center">2006.4 kg</td>
+            <td style="text-align: center">
+              1519.6 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8507.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12377 lb</td>
+            <td style="text-align: center">12265 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.28<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905112</td>
+            <td style="text-align: center">1493.3 N</td>
+            <td style="text-align: center">2240 N</td>
+            <td style="text-align: center">1493.3 N</td>
+            <td style="text-align: center">4200 N</td>
+            <td style="text-align: center">2424.9 N</td>
+            <td style="text-align: center">4849.7 N</td>
+            <td style="text-align: center">32.833 inch</td>
+            <td style="text-align: center">2933.1 lb</td>
+            <td style="text-align: center">2024.5 kg</td>
+            <td style="text-align: center">
+              1533.3 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8587.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12489 lb</td>
+            <td style="text-align: center">12375 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.412<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905113</td>
+            <td style="text-align: center">1506.7 N</td>
+            <td style="text-align: center">2260 N</td>
+            <td style="text-align: center">1506.7 N</td>
+            <td style="text-align: center">4237.5 N</td>
+            <td style="text-align: center">2446.5 N</td>
+            <td style="text-align: center">4893 N</td>
+            <td style="text-align: center">32.755 inch</td>
+            <td style="text-align: center">2959.2 lb</td>
+            <td style="text-align: center">2042.6 kg</td>
+            <td style="text-align: center">
+              1547 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8667.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12600 lb</td>
+            <td style="text-align: center">12486 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.543<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905114</td>
+            <td style="text-align: center">1520 N</td>
+            <td style="text-align: center">2280 N</td>
+            <td style="text-align: center">1520 N</td>
+            <td style="text-align: center">4275 N</td>
+            <td style="text-align: center">2468.2 N</td>
+            <td style="text-align: center">4936.3 N</td>
+            <td style="text-align: center">32.677 inch</td>
+            <td style="text-align: center">2985.4 lb</td>
+            <td style="text-align: center">2060.6 kg</td>
+            <td style="text-align: center">
+              1560.7 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8747.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12712 lb</td>
+            <td style="text-align: center">12596 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.675<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905115</td>
+            <td style="text-align: center">1533.3 N</td>
+            <td style="text-align: center">2300 N</td>
+            <td style="text-align: center">1533.3 N</td>
+            <td style="text-align: center">4312.5 N</td>
+            <td style="text-align: center">2489.8 N</td>
+            <td style="text-align: center">4979.6 N</td>
+            <td style="text-align: center">32.599 inch</td>
+            <td style="text-align: center">3011.6 lb</td>
+            <td style="text-align: center">2078.7 kg</td>
+            <td style="text-align: center">
+              1574.4 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8827.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12823 lb</td>
+            <td style="text-align: center">12707 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.807<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905116</td>
+            <td style="text-align: center">1546.7 N</td>
+            <td style="text-align: center">2320 N</td>
+            <td style="text-align: center">1546.7 N</td>
+            <td style="text-align: center">4350 N</td>
+            <td style="text-align: center">2511.5 N</td>
+            <td style="text-align: center">5022.9 N</td>
+            <td style="text-align: center">32.521 inch</td>
+            <td style="text-align: center">3037.8 lb</td>
+            <td style="text-align: center">2096.8 kg</td>
+            <td style="text-align: center">
+              1588.1 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8907.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">12935 lb</td>
+            <td style="text-align: center">12817 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              14.938<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905117</td>
+            <td style="text-align: center">1560 N</td>
+            <td style="text-align: center">2340 N</td>
+            <td style="text-align: center">1560 N</td>
+            <td style="text-align: center">4387.5 N</td>
+            <td style="text-align: center">2533.1 N</td>
+            <td style="text-align: center">5066.2 N</td>
+            <td style="text-align: center">32.443 inch</td>
+            <td style="text-align: center">3064 lb</td>
+            <td style="text-align: center">2114.9 kg</td>
+            <td style="text-align: center">
+              1601.8 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              8987.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">13046 lb</td>
+            <td style="text-align: center">12928 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              15.07<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905118</td>
+            <td style="text-align: center">1573.3 N</td>
+            <td style="text-align: center">2360 N</td>
+            <td style="text-align: center">1573.3 N</td>
+            <td style="text-align: center">4425 N</td>
+            <td style="text-align: center">2554.8 N</td>
+            <td style="text-align: center">5109.5 N</td>
+            <td style="text-align: center">32.365 inch</td>
+            <td style="text-align: center">3090.2 lb</td>
+            <td style="text-align: center">2132.9 kg</td>
+            <td style="text-align: center">
+              1615.5 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              9067.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">13158 lb</td>
+            <td style="text-align: center">13038 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              15.202<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td style="text-align: left">1905119</td>
+            <td style="text-align: center">1586.7 N</td>
+            <td style="text-align: center">2380 N</td>
+            <td style="text-align: center">1586.7 N</td>
+            <td style="text-align: center">4462.5 N</td>
+            <td style="text-align: center">2576.4 N</td>
+            <td style="text-align: center">5152.9 N</td>
+            <td style="text-align: center">32.287 inch</td>
+            <td style="text-align: center">3116.4 lb</td>
+            <td style="text-align: center">2151 kg</td>
+            <td style="text-align: center">
+              1629.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              9147.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">13269 lb</td>
+            <td style="text-align: center">13149 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              15.334<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td style="text-align: left">1905120</td>
+            <td style="text-align: center">1600 N</td>
+            <td style="text-align: center">2400 N</td>
+            <td style="text-align: center">1600 N</td>
+            <td style="text-align: center">4500 N</td>
+            <td style="text-align: center">2598.1 N</td>
+            <td style="text-align: center">5196.2 N</td>
+            <td style="text-align: center">32.209 inch</td>
+            <td style="text-align: center">3142.6 lb</td>
+            <td style="text-align: center">2169.1 kg</td>
+            <td style="text-align: center">
+              1642.9 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">
+              9227.2 N<span class="math inline">\(\cdot\)</span>m
+            </td>
+            <td style="text-align: center">1272.8 N</td>
+            <td style="text-align: center">900 N</td>
+            <td style="text-align: center">13381 lb</td>
+            <td style="text-align: center">13259 lb</td>
+            <td style="text-align: center">18.352 inch</td>
+            <td style="text-align: center">
+              15.466<span class="math inline">\(^{\circ}\)</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

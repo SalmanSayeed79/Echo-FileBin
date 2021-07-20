@@ -1,0 +1,44 @@
+$primaryCol:#F86D70;
+.card-body{
+    width: 30vw;
+    height: 40vh;
+
+    box-shadow: 5px 5px 5px  rgb(224, 224, 224);
+    border: 1px solid rgba(185, 185, 185, 0.575);
+    background-color: white;
+
+    margin-top: 2rem;
+    margin-right: 2vw;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h2{
+        color: $primaryCol;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    h5{
+        font-size: 1.2rem;
+        padding: .5rem 1rem;
+        background-color: $primaryCol;
+        color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #FD97FF;
+        }
+    }
+}
+
+@media all and (max-width:800px){
+    .card-body{
+        width: 70vw;
+    }
+}

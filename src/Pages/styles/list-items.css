@@ -1,0 +1,50 @@
+#list-item {
+  width: 80vw;
+  min-height: 10vh;
+  border: 0.5px solid #bdbcbc;
+  -webkit-box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.37);
+          box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.37);
+  background-color: white;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+#list-item:hover {
+  background-color: rgba(211, 211, 211, 0.37);
+}
+
+#list-item h2 {
+  width: 50vw;
+  margin-left: 5vw;
+  text-align: left;
+}
+
+#list-item p {
+  width: 20vw;
+  margin-right: 5vw;
+  text-align: right;
+}
+
+@media all and (max-width: 800px) {
+  #list-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #list-item h2, #list-item p {
+    width: 80vw;
+    text-align: center;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=list-items.css.map */
